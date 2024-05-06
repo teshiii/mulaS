@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ダークルーム</title>
 <style>
   body, html {
@@ -10,40 +10,53 @@
     padding: 0;
     height: 100%;
     overflow: hidden;
-    background-color: black; /* 背景色を黒に設定 */
+    background-color: black;
     display: flex;
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 垂直方向に中央揃え */
-    font-family: Arial, sans-serif; /* フォントファミリーの設定 */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
   }
   h1 {
-    font-size: 1.5em; /* 見出しのフォントサイズを調整 */
+    font-size: 2em;
     text-align: center;
-    margin: 20px 0; /* 上部と下部の余白を設定 */
-    color: white; /* テキストの色を白に設定 */
+    margin-top: 10px;
+    color: white;
   }
   .container {
-    text-align: center; /* 中央揃え */
+    text-align: center;
   }
   .box {
-    width: 20vw; /* 幅を画面幅の20%に設定 */
-    height: 20vw; /* 高さを幅と同じに設定 */
-    max-width: 40px; /* 最大幅を40pxに設定 */
-    max-height: 40px; /* 最大高さを40pxに設定 */
-    margin: 5px; /* 枠の間の余白 */
-    border: 1px solid rgb(255, 255, 255); /* 枠線の色を白に設定 */
-    display: inline-flex; /* インラインフレックス要素として表示 */
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 垂直方向に中央揃え */
-    color: white; /* テキストの色を白に設定 */
-    font-size: 0.8em; /* フォントサイズをさらに調整 */
+    width: 30vw;
+    height: 30vw;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+    -webkit-user-select: none;
+    user-select: none;
   }
   #link {
-    color: white; /* テキストの色を白に設定 */
-    text-decoration: none; /* 下線を消す */
-    margin-top: 20px; /* 上部の余白を設定 */
-    display: block; /* ブロック要素として表示 */
-    text-align: center; /* 中央揃え */
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 601px) {
+    /* 600px以上の画面幅に適用 */
+    .box {
+      width: 15vw;
+      height: 15vw;
+      max-width: 30px;
+      max-height: 30px;
+      font-size: 0.9em;
+    }
   }
 </style>
 </head>
